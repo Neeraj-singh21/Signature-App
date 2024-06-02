@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+            <h1>Signature App</h1>
+            <!-- <img src="banner.jpg" alt="Banner Image" style="width: 100%; max-height: 300px; object-fit: cover;"> -->
+       
+    </header>
+    <main>
+        <div class="canvas-container">
+            <canvas id="signatureCanvas" width="600" height="400"></canvas>
+        </div>
+        <div class="controls">
+            <button id="clearBtn">Clear</button>
+            <button id="undoBtn">Undo</button>
+            <button id="redoBtn">Redo</button>
+            <label for="penSize">Pen Size:</label>
+            <input type="range" id="penSize" min="1" max="10" value="2">
+            <label for="penColor">Pen Color:</label>
+            <input type="color" id="penColor" value="#000000">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" value="#ffffff">
+            <button id="savePngBtn">Save as PNG</button>
+            <button id="saveJpgBtn">Save as JPG</button>
+            <button id="savePdfBtn">Save as PDF</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Signature App created and design by Neeraj Kumar Singh</p>
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>
